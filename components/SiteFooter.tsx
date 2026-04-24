@@ -48,11 +48,18 @@ export function SiteFooter() {
                 {siteConfig.country}
               </p>
               <p className="mt-2">
-                Telefon:{" "}
-                <a className="text-white hover:text-asd-red-soft" href={siteConfig.phoneTel}>
-                  {siteConfig.phoneDisplay}
+                Info-Hotline:{" "}
+                <a className="text-white hover:text-asd-red-soft" href={siteConfig.infoHotlineTel}>
+                  {siteConfig.infoHotlineDisplay}
                 </a>
               </p>
+              <p className="mt-1">
+                Telefon:{" "}
+                <a className="text-white hover:text-asd-red-soft" href={siteConfig.officePhoneTel}>
+                  {siteConfig.officePhoneDisplay}
+                </a>
+              </p>
+              <p className="mt-1 text-zinc-400">Fax: {siteConfig.faxDisplay}</p>
               <p className="mt-1">
                 E-Mail:{" "}
                 <a
@@ -64,11 +71,31 @@ export function SiteFooter() {
               </p>
             </div>
             <div>
-              <p className="font-semibold text-white">Leistungen</p>
+              <p className="font-semibold text-white">Themen</p>
               <ul className="mt-2 space-y-1">
                 <li>
+                  <Link href="/warum-hausnotruf" className="hover:text-white">
+                    Warum Hausnotruf
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/der-alarm" className="hover:text-white">
+                    Der Alarm
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/hausnotrufzentrale" className="hover:text-white">
+                    Hausnotrufzentrale
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/hilfemassnahmen" className="hover:text-white">
+                    Hilfemaßnahmen
+                  </Link>
+                </li>
+                <li>
                   <Link href="/#leistungen" className="hover:text-white">
-                    Hausnotruf
+                    Leistungen (Überblick)
                   </Link>
                 </li>
                 <li>
@@ -77,13 +104,8 @@ export function SiteFooter() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#ablauf" className="hover:text-white">
-                    Ablauf &amp; Installation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#faq" className="hover:text-white">
-                    Häufige Fragen
+                  <Link href="/faq" className="hover:text-white">
+                    FAQ
                   </Link>
                 </li>
               </ul>

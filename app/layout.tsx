@@ -47,7 +47,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: siteConfig.brand,
   url: siteUrl,
-  telephone: siteConfig.phoneTel.replace(/^tel:/u, ""),
+  telephone: siteConfig.officePhoneTel.replace(/^tel:/u, ""),
   email: siteConfig.email,
   address: {
     "@type": "PostalAddress",

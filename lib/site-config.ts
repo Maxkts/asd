@@ -1,4 +1,4 @@
-/** Zentrale Texte — Angaben vor Livegang durch echte Firmendaten ersetzen. */
+/** Zentrale Stammdaten — Stand der öffentlichen Angaben wie auf asd-hausnotruf.de. */
 export const siteConfig = {
   brand: "ASD Hausnotruf",
   /** Markenlogo (PNG), Datei in `public/` */
@@ -10,15 +10,24 @@ export const siteConfig = {
   titleTemplate: "%s | ASD Hausnotruf",
   description:
     "ASD Hausnotruf: professionelle Anbindung an eine Notrufzentrale, einfache Bedienung und persönliche Beratung für mehr Sicherheit zu Hause.",
-  phoneDisplay: "0800 000 0000",
-  phoneTel: "tel:+4980000000000",
-  email: "kontakt@example.de",
-  legalName: "ASD Hausnotruf GmbH (Muster)",
-  street: "Musterstraße 1",
-  zipCity: "12345 Musterstadt",
+  /** Kostenlose Info-Hotline (Werbeträger / Erstkontakt) */
+  infoHotlineDisplay: "0800 76 77 896",
+  infoHotlineTel: "tel:+498007677896",
+  /** Büro / allgemeine Erreichbarkeit */
+  officePhoneDisplay: "04471 926 29 50",
+  officePhoneTel: "tel:+4944719262950",
+  faxDisplay: "04471 926 29 55",
+  /** Primär für CTAs in Header & Buttons (Info-Hotline) */
+  phoneDisplay: "0800 76 77 896",
+  phoneTel: "tel:+498007677896",
+  email: "info@asd-hausnotruf.de",
+  legalName: "ASD Hausnotruf GmbH",
+  street: "Porscheweg 22",
+  zipCity: "49661 Cloppenburg",
   country: "Deutschland",
-  managingDirector: "Max Mustermann",
-  registerCourt: "Amtsgericht Musterstadt",
-  registerNumber: "HRB 00000",
-  vatId: "DE000000000",
+  managingDirector: "Matthias Hackmann",
+  registerCourt: "Amtsgericht Oldenburg",
+  registerNumber: "HRB 201712",
+  vatId: "DE247588588",
+  institutionId: "IK590342651",
 } as const;

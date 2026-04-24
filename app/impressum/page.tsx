@@ -16,12 +16,10 @@ export default function ImpressumPage() {
       <main id="main" className="min-h-[50vh] bg-white py-12">
         <article className="mx-auto max-w-3xl px-4">
           <h1 className="text-3xl font-semibold text-asd-charcoal">Impressum</h1>
-          <p className="mt-4 rounded-md border border-asd-red/25 bg-asd-red/5 p-4 text-sm text-asd-charcoal">
-            <strong>Hinweis:</strong> Die folgenden Angaben sind{" "}
-            <strong>Platzhalter</strong>. Vor Veröffentlichung müssen sie durch
-            die tatsächlichen, rechtskonformen Daten Ihres Unternehmens ersetzt
-            und ggf. von einer Rechtsanwältin oder einem Rechtsanwalt geprüft
-            werden.
+          <p className="mt-4 rounded-md border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-700">
+            <strong>Hinweis:</strong> Diese Seite spiegelt die öffentlichen
+            Unternehmensangaben wider. Für verbindliche Rechtsfolgen ist die
+            jeweils aktuelle Fassung maßgeblich.
           </p>
           <div className="mt-10 space-y-8 text-zinc-700">
             <section aria-labelledby="angaben">
@@ -42,7 +40,9 @@ export default function ImpressumPage() {
               <h2 id="vertretung" className="text-xl font-semibold text-asd-charcoal">
                 Vertreten durch
               </h2>
-              <p className="mt-3">{siteConfig.managingDirector} (Geschäftsführung)</p>
+              <p className="mt-3">
+                Geschäftsführer: {siteConfig.managingDirector}
+              </p>
             </section>
             <section aria-labelledby="kontakt-imp">
               <h2 id="kontakt-imp" className="text-xl font-semibold text-asd-charcoal">
@@ -50,9 +50,14 @@ export default function ImpressumPage() {
               </h2>
               <p className="mt-3">
                 Telefon:{" "}
-                <a className="text-asd-red hover:text-asd-red-hover underline" href={siteConfig.phoneTel}>
-                  {siteConfig.phoneDisplay}
+                <a
+                  className="text-asd-red hover:text-asd-red-hover underline"
+                  href={siteConfig.officePhoneTel}
+                >
+                  {siteConfig.officePhoneDisplay}
                 </a>
+                <br />
+                Fax: {siteConfig.faxDisplay}
                 <br />
                 E-Mail:{" "}
                 <a
@@ -60,6 +65,14 @@ export default function ImpressumPage() {
                   href={`mailto:${siteConfig.email}`}
                 >
                   {siteConfig.email}
+                </a>
+                <br />
+                Info-Hotline:{" "}
+                <a
+                  className="text-asd-red hover:text-asd-red-hover underline"
+                  href={siteConfig.infoHotlineTel}
+                >
+                  {siteConfig.infoHotlineDisplay}
                 </a>
               </p>
             </section>
@@ -83,6 +96,12 @@ export default function ImpressumPage() {
                 Umsatzsteuer-Identifikationsnummer gemäß Umsatzsteuergesetz:{" "}
                 {siteConfig.vatId}
               </p>
+            </section>
+            <section aria-labelledby="ik">
+              <h2 id="ik" className="text-xl font-semibold text-asd-charcoal">
+                Institutionskennzeichen
+              </h2>
+              <p className="mt-3">{siteConfig.institutionId}</p>
             </section>
             <section aria-labelledby="streitschlichtung">
               <h2 id="streitschlichtung" className="text-xl font-semibold text-asd-charcoal">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const GERATE_BILD = "/geraete/hausnotruf-komponenten.png";
 
@@ -44,7 +45,10 @@ export function DeviceShowcase() {
         <p className="mt-3 max-w-3xl text-zinc-600 md:text-lg">
           Viele Hausnotruf-Systeme bestehen aus einer festen Basis und mobilen
           Sendern. Welche Modelle für Sie infrage kommen, besprechen wir in der
-          Beratung — die Abbildung zeigt gängige Komponenten nur beispielhaft.
+          Beratung — die Abbildung zeigt gängige Komponenten nur beispielhaft.{" "}
+          <Link href="/hausnotrufgeraete" className="font-medium text-asd-red hover:text-asd-red-hover underline">
+            Mehr zu Hausnotrufgeräten
+          </Link>
         </p>
         <ul className="mt-10 grid gap-8 md:grid-cols-3">
           {geraete.map((g) => (

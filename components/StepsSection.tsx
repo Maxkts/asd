@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const steps = [
   {
     n: 1,
@@ -48,6 +50,20 @@ export function StepsSection() {
             </li>
           ))}
         </ol>
+        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-zinc-600 md:text-base">
+          Technischer Ablauf vom Knopfdruck bis zur Zentrale:{" "}
+          <Link href="/der-alarm" className="font-medium text-asd-red hover:text-asd-red-hover underline">
+            Der Alarm
+          </Link>{" "}
+          und{" "}
+          <Link
+            href="/hausnotrufzentrale"
+            className="font-medium text-asd-red hover:text-asd-red-hover underline"
+          >
+            Hausnotrufzentrale
+          </Link>
+          .
+        </p>
       </div>
     </section>
   );

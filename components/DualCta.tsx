@@ -37,9 +37,18 @@ export function DualCta() {
               Sie haben Fragen zu Leistungen oder Geräten?
             </h3>
             <p className="mt-3 text-zinc-700">
-              <strong>Telefon:</strong>{" "}
+              <strong>Info-Hotline:</strong>{" "}
               <a className="text-asd-red underline hover:text-asd-red-hover" href={siteConfig.phoneTel}>
-                {siteConfig.phoneDisplay}
+                {siteConfig.infoHotlineDisplay}
+              </a>
+            </p>
+            <p className="mt-2 text-sm text-zinc-600">
+              <strong>Büro:</strong>{" "}
+              <a
+                className="text-asd-red underline hover:text-asd-red-hover"
+                href={siteConfig.officePhoneTel}
+              >
+                {siteConfig.officePhoneDisplay}
               </a>
             </p>
             <p className="mt-1 text-zinc-700">
