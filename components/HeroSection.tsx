@@ -14,6 +14,7 @@ export function HeroSection() {
         alt="Paar zuhause mit Hausnotruf am Handgelenk; daneben Basisstation und mobile Notruf-Sender"
         fill
         priority
+        quality={92}
         className="object-cover object-[55%_center] md:object-center"
         sizes="100vw"
       />
