@@ -72,6 +72,11 @@ export function SiteFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/#geraete" className="hover:text-white">
+                    Geräte
+                  </Link>
+                </li>
+                <li>
                   <Link href="/#ablauf" className="hover:text-white">
                     Ablauf &amp; Installation
                   </Link>

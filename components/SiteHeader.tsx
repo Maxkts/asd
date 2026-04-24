@@ -8,6 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 
 const nav = [
   { href: "/#leistungen", label: "Leistungen" },
+  { href: "/#geraete", label: "Geräte" },
   { href: "/#ablauf", label: "So funktioniert’s" },
   { href: "/#faq", label: "Häufige Fragen" },
   { href: "/#kontakt", label: "Kontakt" },

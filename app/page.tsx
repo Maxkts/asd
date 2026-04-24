@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { IntroBand } from "@/components/IntroBand";
 import { SectionTeaser } from "@/components/SectionTeaser";
 import { FeatureGrid } from "@/components/FeatureGrid";
+import { DeviceShowcase } from "@/components/DeviceShowcase";
 import { StepsSection } from "@/components/StepsSection";
 import { FaqSection } from "@/components/FaqSection";
 import { DualCta } from "@/components/DualCta";
@@ -17,6 +18,7 @@ export default function Home() {
         <IntroBand />
         <SectionTeaser />
         <FeatureGrid />
+        <DeviceShowcase />
         <StepsSection />
         <FaqSection />
         <DualCta />
