@@ -8,9 +8,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
-  --color-asd-shark: #2c3135;
-  --color-asd-surface: #eef0f3;
+  --font-sans: var(--font-sans-brand), ui-sans-serif, system-ui, sans-serif;
+  /* CI aus Markenlogo: Anthrazit + Rot */
+  --color-asd-shark: #2d2d2d;
+  --color-asd-charcoal: #2d2d2d;
+  --color-asd-red: #c12e2e;
+  --color-asd-red-hover: #a02828;
+  --color-asd-red-soft: #ff8a8a;
+  --color-asd-surface: #f4f5f7;
 }
 
 body {

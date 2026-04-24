@@ -7,18 +7,25 @@ export function SiteFooter() {
     <footer className="bg-asd-surface">
       <div className="border-b border-zinc-200 py-10">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 md:flex-row md:items-center md:justify-between">
-          <Link href="/" className="inline-block" aria-label={siteConfig.brand}>
-            <Image src="/logo-asd.svg" alt={siteConfig.brand} width={180} height={42} />
+          <Link href="/" className="inline-block shrink-0" aria-label={siteConfig.brand}>
+            <Image
+              src={siteConfig.logoSrc}
+              alt={siteConfig.brand}
+              width={siteConfig.logoWidth}
+              height={siteConfig.logoHeight}
+              className="h-10 w-auto md:h-12"
+              sizes="(max-width: 768px) 220px, 280px"
+            />
           </Link>
           <p className="max-w-md text-zinc-700">
-            <strong className="text-asd-shark">ASD Hausnotruf</strong>
+            <strong className="text-asd-charcoal">ASD Hausnotruf</strong>
             <br />
             Hausnotruflösungen mit persönlicher Beratung und zuverlässiger
             Anbindung an Hilfe im Ernstfall.
           </p>
           <div className="rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
-            <p className="text-sm font-medium text-asd-shark">
-              <Link href="/#kontakt" className="hover:underline">
+            <p className="text-sm font-medium text-asd-charcoal">
+              <Link href="/#kontakt" className="hover:text-asd-red hover:underline">
                 Persönliches Gespräch vereinbaren
               </Link>
             </p>
@@ -28,7 +35,7 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="bg-asd-shark py-8 text-sm text-zinc-300">
+      <div className="bg-asd-charcoal py-8 text-sm text-zinc-300">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div>
@@ -42,14 +49,14 @@ export function SiteFooter() {
               </p>
               <p className="mt-2">
                 Telefon:{" "}
-                <a className="text-white hover:underline" href={siteConfig.phoneTel}>
+                <a className="text-white hover:text-asd-red-soft" href={siteConfig.phoneTel}>
                   {siteConfig.phoneDisplay}
                 </a>
               </p>
               <p className="mt-1">
                 E-Mail:{" "}
                 <a
-                  className="text-white hover:underline"
+                  className="text-white hover:text-asd-red-soft"
                   href={`mailto:${siteConfig.email}`}
                 >
                   {siteConfig.email}

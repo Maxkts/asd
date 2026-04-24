@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Source_Sans_3 } from "next/font/google";
+import { Inter } from "next/font/google";
 import { SkipLink } from "@/components/SkipLink";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
+const inter = Inter({
+  variable: "--font-sans-brand",
   subsets: ["latin"],
   display: "swap",
 });
@@ -65,7 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className={`${sourceSans.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

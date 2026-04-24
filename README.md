@@ -2,6 +2,8 @@
 
 Öffentliche App: `app/`, `components/`, Konfiguration in `lib/site-config.ts`.
 
+**Markenfarben (CI):** Anthrazit `#2D2D2D`, Rot `#C12E2E` — definiert in `app/globals.css` (`asd-charcoal`, `asd-red`, …). Logo: `public/logo-asd-hausnotruf.png`, Pfade in `siteConfig`.
+
 ## Entwicklung
 
 ```bash

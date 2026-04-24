@@ -1,6 +1,10 @@
 /** Zentrale Texte — Angaben vor Livegang durch echte Firmendaten ersetzen. */
 export const siteConfig = {
   brand: "ASD Hausnotruf",
+  /** Markenlogo (PNG), Datei in `public/` */
+  logoSrc: "/logo-asd-hausnotruf.png",
+  logoWidth: 320,
+  logoHeight: 72,
   titleTemplate: "%s | ASD Hausnotruf",
   description:
     "ASD Hausnotruf: professionelle Anbindung an eine Notrufzentrale, einfache Bedienung und persönliche Beratung für mehr Sicherheit zu Hause.",

@@ -23,7 +23,7 @@ export function FaqSection() {
       <div className="mx-auto max-w-3xl px-4">
         <h2
           id="faq-heading"
-          className="text-2xl font-semibold text-asd-shark md:text-3xl"
+          className="text-2xl font-semibold text-asd-charcoal md:text-3xl"
         >
           Häufige Fragen
         </h2>
@@ -33,7 +33,7 @@ export function FaqSection() {
               key={item.q}
               className="group rounded-lg border border-zinc-200 bg-white px-4 py-1 shadow-sm open:shadow-md"
             >
-              <summary className="cursor-pointer list-none py-3 font-medium text-asd-shark after:float-right after:text-zinc-400 after:content-['+'] group-open:after:content-['−']">
+              <summary className="cursor-pointer list-none py-3 font-medium text-asd-charcoal after:float-right after:text-zinc-400 after:content-['+'] group-open:after:content-['−']">
                 {item.q}
               </summary>
               <p className="border-t border-zinc-100 pb-4 pt-2 text-sm leading-relaxed text-zinc-600 md:text-base">

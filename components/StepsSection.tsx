@@ -26,7 +26,7 @@ export function StepsSection() {
       <div className="mx-auto max-w-6xl px-4">
         <h2
           id="ablauf-heading"
-          className="text-2xl font-semibold text-asd-shark md:text-3xl"
+          className="text-2xl font-semibold text-asd-charcoal md:text-3xl"
         >
           So funktioniert&apos;s
         </h2>
@@ -34,13 +34,13 @@ export function StepsSection() {
           {steps.map((s) => (
             <li key={s.n} className="relative flex gap-4">
               <span
-                className="flex size-10 shrink-0 items-center justify-center rounded-full bg-asd-shark text-sm font-bold text-white"
+                className="flex size-10 shrink-0 items-center justify-center rounded-full bg-asd-charcoal text-sm font-bold text-white"
                 aria-hidden
               >
                 {s.n}
               </span>
               <div>
-                <h3 className="text-lg font-semibold text-asd-shark">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-asd-charcoal">{s.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-zinc-600 md:text-base">
                   {s.text}
                 </p>

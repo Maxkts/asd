@@ -15,10 +15,10 @@ export default function DatenschutzPage() {
       <SiteHeader />
       <main id="main" className="min-h-[50vh] bg-white py-12">
         <article className="mx-auto max-w-3xl px-4">
-          <h1 className="text-3xl font-semibold text-asd-shark">
+          <h1 className="text-3xl font-semibold text-asd-charcoal">
             Datenschutzerklärung
           </h1>
-          <p className="mt-4 rounded-md border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
+          <p className="mt-4 rounded-md border border-asd-red/25 bg-asd-red/5 p-4 text-sm text-asd-charcoal">
             <strong>Hinweis:</strong> Diese Erklärung ist eine{" "}
             <strong>Muster-/Startvorlage</strong> und ersetzt keine
             rechtskonforme Datenschutzerklärung. Bitte passen Sie alle Abschnitte
@@ -28,7 +28,7 @@ export default function DatenschutzPage() {
           </p>
           <div className="mt-10 space-y-8 text-zinc-700">
             <section>
-              <h2 className="text-xl font-semibold text-asd-shark">
+              <h2 className="text-xl font-semibold text-asd-charcoal">
                 1. Verantwortliche Stelle
               </h2>
               <p className="mt-3">
@@ -42,7 +42,7 @@ export default function DatenschutzPage() {
               </p>
             </section>
             <section>
-              <h2 className="text-xl font-semibold text-asd-shark">
+              <h2 className="text-xl font-semibold text-asd-charcoal">
                 2. Allgemeines zur Datenverarbeitung
               </h2>
               <p className="mt-3">
@@ -55,7 +55,7 @@ export default function DatenschutzPage() {
               </p>
             </section>
             <section>
-              <h2 className="text-xl font-semibold text-asd-shark">
+              <h2 className="text-xl font-semibold text-asd-charcoal">
                 3. Hosting und Server-Logfiles
               </h2>
               <p className="mt-3">
@@ -68,7 +68,7 @@ export default function DatenschutzPage() {
               </p>
             </section>
             <section>
-              <h2 className="text-xl font-semibold text-asd-shark">
+              <h2 className="text-xl font-semibold text-asd-charcoal">
                 4. Kontaktaufnahme
               </h2>
               <p className="mt-3">
@@ -80,7 +80,7 @@ export default function DatenschutzPage() {
               </p>
             </section>
             <section>
-              <h2 className="text-xl font-semibold text-asd-shark">
+              <h2 className="text-xl font-semibold text-asd-charcoal">
                 5. Cookies und ähnliche Technologien
               </h2>
               <p className="mt-3">
@@ -91,7 +91,7 @@ export default function DatenschutzPage() {
               </p>
             </section>
             <section>
-              <h2 className="text-xl font-semibold text-asd-shark">
+              <h2 className="text-xl font-semibold text-asd-charcoal">
                 6. Ihre Rechte
               </h2>
               <p className="mt-3">
@@ -104,7 +104,7 @@ export default function DatenschutzPage() {
               </p>
             </section>
             <p className="pt-4">
-              <Link href="/" className="font-medium text-amber-800 underline">
+              <Link href="/" className="font-medium text-asd-red hover:text-asd-red-hover underline">
                 Zurück zur Startseite
               </Link>
             </p>

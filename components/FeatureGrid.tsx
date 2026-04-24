@@ -6,7 +6,7 @@ const items = [
     icon: Headphones,
     body: (
       <>
-        <p className="font-semibold text-asd-shark">
+        <p className="font-semibold text-asd-charcoal">
           Direkte Verbindung zu Hilfe.
         </p>
         <p className="mt-2 text-zinc-600">
@@ -21,7 +21,7 @@ const items = [
     icon: MapPin,
     body: (
       <>
-        <p className="font-semibold text-asd-shark">
+        <p className="font-semibold text-asd-charcoal">
           Passend zu Ihrem Lebensstil.
         </p>
         <p className="mt-2 text-zinc-600">
@@ -36,7 +36,7 @@ const items = [
     icon: Shield,
     body: (
       <>
-        <p className="font-semibold text-asd-shark">Persönlich statt anonym.</p>
+        <p className="font-semibold text-asd-charcoal">Persönlich statt anonym.</p>
         <p className="mt-2 text-zinc-600">
           Klare Abläufe, feste Ansprechpartner und Unterstützung bei Fragen zur
           Bedienung.
@@ -56,7 +56,7 @@ export function FeatureGrid() {
       <div className="mx-auto max-w-6xl px-4">
         <h2
           id="leistungen-heading"
-          className="text-2xl font-semibold text-asd-shark md:text-3xl"
+          className="text-2xl font-semibold text-asd-charcoal md:text-3xl"
         >
           Leistungen im Überblick
         </h2>
@@ -68,10 +68,10 @@ export function FeatureGrid() {
           {items.map(({ title, icon: Icon, body }) => (
             <li key={title}>
               <article className="flex h-full flex-col rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
-                <div className="mb-4 inline-flex size-12 items-center justify-center rounded-md bg-amber-100 text-amber-800">
+                <div className="mb-4 inline-flex size-12 items-center justify-center rounded-md bg-asd-red/10 text-asd-red">
                   <Icon className="size-6" aria-hidden />
                 </div>
-                <h3 className="text-lg font-semibold text-asd-shark">{title}</h3>
+                <h3 className="text-lg font-semibold text-asd-charcoal">{title}</h3>
                 <div className="mt-3 text-sm leading-relaxed">{body}</div>
               </article>
             </li>
