@@ -5,6 +5,8 @@ export const siteConfig = {
   logoSrc: "/logo-asd-hausnotruf.png",
   logoWidth: 320,
   logoHeight: 72,
+  /** Startseiten-Hero (breites Banner) */
+  heroBannerSrc: "/hero-asd-banner.png",
   titleTemplate: "%s | ASD Hausnotruf",
   description:
     "ASD Hausnotruf: professionelle Anbindung an eine Notrufzentrale, einfache Bedienung und persönliche Beratung für mehr Sicherheit zu Hause.",
